@@ -1,27 +1,28 @@
 # Create a Binary Tree - Level Order Traversal
 
 ```java
-static void printLevelWise(Node root) {
-        if (root == null) return;
-
-        Queue<Node> q = new LinkedList<>();
-        q.add(root);
-
-        while (!q.isEmpty()) {
-            int size = q.size();
-
-            for (int i = 0; i < size; i++) {
-                Node front = q.poll();
-                
-                if (front.left != null) q.add(front.left);
-                if (front.right != null) q.add(front.right);
-                if(i == size-1){
-                    System.out.print(front.data);
-                }else{
-                    System.out.print(front.data + " ");
-                }
+static Node buildTree(int arr[], int n) {
+    if(arr.length == 0)return null;
+    int ptr =1;
+    Node root = new Node(arr[0]);
+    Queue<Node> q = new LinkedList<>();
+    q.add(root);
+    while(ptr< arr.length){
+        int size = q.size();
+        for (int i=0;i< size;i++){
+            Node temp = q.poll();
+            if(ptr<arr.length){
+                temp.left = new Node(arr[ptr]);
+                q.add(temp.left);
             }
-            System.out.println();
+            ptr++;
+            if(ptr<arr.length){
+                temp.right = new Node(arr[ptr]);
+                q.add(temp.right);
+            }
+            ptr++;
         }
+    }
+    return root;
 }
 ```
