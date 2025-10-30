@@ -1,3 +1,5 @@
+# Count Word in Board
+
 ```java
 // Do not change the class name
 class Result {
@@ -43,3 +45,4 @@ class Result {
     }
 }
 ```
+

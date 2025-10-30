@@ -1,3 +1,5 @@
+# Print All Strings of N Bits
+
 ```java
 class Solve
 {
@@ -18,3 +20,4 @@ class Solve
     } 
 }
 ```
+

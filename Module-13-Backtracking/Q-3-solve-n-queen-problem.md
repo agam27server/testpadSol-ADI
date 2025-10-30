@@ -1,3 +1,5 @@
+# Solve N Queen Problem
+
 ```java
 class Result 
 {
