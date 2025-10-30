@@ -1,15 +1,6 @@
-# Data Structures & Algorithms Solutions 📚
+# Data Structures & Algorithms Solutions 
 
 A comprehensive collection of DSA problem solutions implemented in Java, covering various fundamental topics and algorithms.
-
-## 📖 Table of Contents
-
-- [About](#about)
-- [Repository Structure](#repository-structure)
-- [Topics Covered](#topics-covered)
-- [Module Details](#module-details)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
 
 ## About
 
@@ -27,14 +18,14 @@ testpadSol-ADI/
 └── Module-19-Dyanmic-programming/
 ```
 
-## Topics Covered
+## Topics Covered till now
 
-- 🔄 **Recursion**
-- 🌳 **Binary Trees**
-- 🔍 **Binary Search Trees**
-- 💰 **Greedy Algorithms**
-- ↩️ **Backtracking**
-- 📊 **Dynamic Programming**
+- **Recursion**
+- **Binary Trees**
+- **Binary Search Trees**
+- **Greedy Algorithms**
+- **Backtracking**
+- **Dynamic Programming**
 
 ## Module Details
 
@@ -91,49 +82,9 @@ testpadSol-ADI/
 - Matrix Chain Multiplication
 - 0/1 Knapsack Problem
 
-## How to Use
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/agam27server/testpadSol-ADI.git
-   cd testpadSol-ADI
-   ```
-
-2. **Navigate to any module**
-   ```bash
-   cd Module-8-Binary-Tree
-   ```
-
-3. **View solutions**
-   Each `.md` file contains:
-   - Problem title
-   - Complete Java solution
-   - Commented code with explanations
 
 ## Language
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 
-## Problem Count
 
-Total Problems Solved: **41**
-
-## Contributing
-
-Feel free to contribute by:
-- Adding new solutions
-- Improving existing code
-- Adding explanations
-- Reporting issues
-
-## Author
-
-**Agam**
-
-## License
-
-This project is open source and available for educational purposes.
-
----
-
-⭐ Star this repository if you find it helpful!
