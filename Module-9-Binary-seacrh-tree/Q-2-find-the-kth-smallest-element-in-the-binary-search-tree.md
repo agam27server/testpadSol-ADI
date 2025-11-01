@@ -16,14 +16,13 @@
  *
  *  The above class defines a tree node.
  */
-class Result {
-  static void solve(Node root, List<Integer> list){
+  static void inor(Node root, List<Integer> list){
       if(root == null){
           return;
       }
-      solve(root.left, list);
+      inor(root.left, list);
       list.add(root.data);
-      solve(root.right, list);
+      inor(root.right, list);
   }
   static int kSmallest(Node root, int k) {
     // Write your code here
@@ -31,14 +30,7 @@ class Result {
           return 0;
       }
       List<Integer> list = new ArrayList<>();
-      solve(root,list);
-      //inOrder(root);
-      /*for(int i = 0; i < list.size(); i++){
-          if(i == k-1){
-              return list.get(i);
-          }
-      }*/
+      inor(root, list);
       return list.get(k-1);
   }
-}
 ```
