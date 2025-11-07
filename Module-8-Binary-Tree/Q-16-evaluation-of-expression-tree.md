@@ -1,31 +1,33 @@
+# Evaluation of expression tree
+```java
 /* class Node {
   int data; // data used as key value
   Node leftChild;
   Node rightChild;
   public Node()  {
-    data = 0;
+    data=0;  
   }
   public Node(int d)  {
-    data = d;
+    data=d;  
   }
-} */
+ } 
+*/
 
 class Result {
-  static int evaluateTree(Node t1) {
-    // Base case: if node is null
-    if (t1 == null)
+  static int evaluateTree(Node root) {
+    if (root == null)
       return 0;
 
-    // If leaf node, return the value directly
-    if (t1.leftChild == null && t1.rightChild == null)
-      return t1.data;
+    // If leaf node, return the operand value
+    if (root.leftChild == null && root.rightChild == null)
+      return root.data;
 
-    // Recursively evaluate left and right subtrees
-    int leftVal = evaluateTree(t1.leftChild);
-    int rightVal = evaluateTree(t1.rightChild);
+    // Evaluate left and right subtrees
+    int leftVal = evaluateTree(root.leftChild);
+    int rightVal = evaluateTree(root.rightChild);
 
-    // Apply the operator based on ASCII code
-    switch (t1.data) {
+    // Operator node: data stores ASCII of operator
+    switch (root.data) {
       case 43: // '+'
         return leftVal + rightVal;
       case 45: // '-'
@@ -39,3 +41,4 @@ class Result {
     }
   }
 }
+```
