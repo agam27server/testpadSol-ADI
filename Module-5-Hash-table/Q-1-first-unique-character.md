@@ -1,3 +1,6 @@
+# First Unique Character
+
+```java
 class Result {
   static int firstUniqueChar(String str) {
       int[] freq = new int[26];
@@ -14,3 +17,4 @@ class Result {
       return -1;
   }
 }
+```
