@@ -1,3 +1,6 @@
+# Kth Distinct Element
+
+```java
 class Result {
   static int kthDistinctElement(int arr[], int N, int K) {
     // Write your code here
@@ -17,3 +20,4 @@ class Result {
       return 0;
   }
 }
+```
