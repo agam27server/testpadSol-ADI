@@ -1,3 +1,6 @@
+# Unique Characters or Not
+
+```java
 class Result {
     // Function to print YES if all characters are unique, NO otherwise
     static boolean isUniqueChars(String str) {
@@ -16,3 +19,4 @@ class Result {
         return true;
     }
 }
+```
