@@ -1,3 +1,6 @@
+# Count Frequency of Each Character
+
+```java
 class Result {
   static void countFrequency(String str) {
     // Write your code here
@@ -13,3 +16,4 @@ class Result {
       }
   }
 }
+```
