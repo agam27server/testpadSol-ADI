@@ -1,3 +1,6 @@
+# Maximum Frequency in a Sequence
+
+```java
 import java.util.*;
 class Result {
     static int maxFrequency(int A[], int n) {
@@ -19,3 +22,4 @@ class Result {
         return maxiEle;
     }
 }
+```
