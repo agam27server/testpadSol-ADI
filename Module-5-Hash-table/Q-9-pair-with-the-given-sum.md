@@ -1,3 +1,6 @@
+# Pair with the Given Sum
+
+```java
 class Result {
     static boolean pairSum(int arr[], int n, int k) {
         Map<Integer, Boolean> map = new HashMap<>();
@@ -9,4 +12,6 @@ class Result {
             map.put(arr[i], true); // mark current element as seen
         }
         return false; // no pair found
-    }}
+    }
+}
+```
