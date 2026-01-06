@@ -1,3 +1,6 @@
+# Find All Pairs with K Difference
+
+```java
 class Result {
     static int getPairsCount(int arr[], int n, int k) {
         Set<Integer> set = new HashSet<>();
@@ -15,3 +18,4 @@ class Result {
         return count;
     }
 }
+```
