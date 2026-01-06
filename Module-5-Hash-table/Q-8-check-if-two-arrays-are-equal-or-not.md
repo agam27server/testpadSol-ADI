@@ -1,3 +1,6 @@
+# Check if Two Arrays are Equal or Not
+
+```java
 class Result {
   static int arraysEqualorNot(int[] A, int[] B) {
     // Write your code here
@@ -11,3 +14,4 @@ class Result {
       return 1;
   }
 }
+```
