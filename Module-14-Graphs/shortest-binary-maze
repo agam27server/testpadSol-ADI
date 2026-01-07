@@ -1,6 +1,9 @@
-## Shortest Path in a Binary Maze (C++ – BFS)
+# Shortest Path in a Binary Maze
 
 ```cpp
+#include <bits/stdc++.h>
+using namespace std;
+
 int shortestPath(vector<vector<int>> mat,
                  int srcR, int srcC,
                  int destR, int destC,
@@ -18,7 +21,7 @@ int shortestPath(vector<vector<int>> mat,
 
     int distance = 0;
 
-    // 4 possible directions: down, up, right, left
+    // 4 possible directions
     int dx[4] = {1, -1, 0, 0};
     int dy[4] = {0, 0, 1, -1};
 
@@ -38,7 +41,6 @@ int shortestPath(vector<vector<int>> mat,
             if (x == destR && y == destC)
                 return distance;
 
-            // Explore neighbors
             for (int i = 0; i < 4; i++) {
 
                 int nx = x + dx[i];
@@ -54,7 +56,7 @@ int shortestPath(vector<vector<int>> mat,
                 }
             }
         }
-        distance++; // increase distance after each level
+        distance++;
     }
 
     return -1; // destination not reachable
