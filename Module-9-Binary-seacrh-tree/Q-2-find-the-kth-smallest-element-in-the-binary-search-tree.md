@@ -1,6 +1,7 @@
 # Find the Kth Smallest Element in the Binary Search Tree
 
-```java/* 
+```java
+/* 
  *  class Node {
  *    int data;a
  *    Node left; 
